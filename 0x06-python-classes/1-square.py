@@ -5,12 +5,12 @@ Define class Square with private attribute size
 """
 
 
-class square:
+class Square:
     """Represent a square."""
 
     def __init__(self, size):
         """
-        Initializes square
+        Initializes squares
 
         Attributes:
             size: size of a square
