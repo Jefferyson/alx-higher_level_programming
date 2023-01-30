@@ -5,5 +5,5 @@ Defines an empty class called rectangle
 """
 
 class Rectangle:
-    """Empty class"""
+    """Empty class."""
     pass
