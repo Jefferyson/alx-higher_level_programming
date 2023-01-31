@@ -1,1 +1,1 @@
-Higher languages
+Everything is an object
