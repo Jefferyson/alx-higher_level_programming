@@ -1,6 +1,10 @@
--- Script that lists all cities contained in the database
-SELECT `cities.id`, `cities.name`, `states.name`
-	FROM `cities`
-	INNER JOIN states
-	ON `cities`.`state_id` = `state_id`
-	ORDER BY `cities.id ASC;
+-- Selects records from one table (cities) with a
+-- column value that can be found in another set
+SELECT id, name FROM cities
+    WHERE state_id IN
+    (
+        SELECT id FROM states
+            WHERE name = 'California'
+    )
+    ORDER BY id ASC;
+
