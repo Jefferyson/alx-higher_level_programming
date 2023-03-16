@@ -1,10 +1,6 @@
--- Selects records from one table (cities) with a
--- column value that can be found in another set
-SELECT id, name FROM cities
-    WHERE state_id IN
-    (
-        SELECT id FROM states
-            WHERE name = 'California'
-    )
-    ORDER BY id ASC;
-
+-- Prints and joins records from two tables with a matching field
+SELECT cities.id, cities.name, states.name
+    FROM cities
+    INNER JOIN states
+        ON cities.state_id = states.id
+    ORDER BY cities.id ASC;
