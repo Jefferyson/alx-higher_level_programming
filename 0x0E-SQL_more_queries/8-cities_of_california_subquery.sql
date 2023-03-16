@@ -5,4 +5,4 @@ WHERE `state_id` IN
 	(SELECT `id`,
 		FROM `states`,
 		WHERE `name` = "Califirnia")
-	ORDER BY `id`;
+	ORDER BY `id`ASC;
